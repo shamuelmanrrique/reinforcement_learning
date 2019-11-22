@@ -34,40 +34,41 @@ def question3a():
 
 
 def question3b():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.20
+    answerNoise = 0.2
+    answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 
 def question3c():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.9
+    answerNoise = 0.0
+    answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 
 def question3d():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.9
+    answerNoise = 0.2
+    answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 
 def question3e():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.9
+    answerNoise = 0.2
+    answerLivingReward = 1.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 
 def question8():
-    answerEpsilon = None
-    answerLearningRate = None
+    # CHeck
+    answerEpsilon = 0.0
+    answerLearningRate = 1.0
     return answerEpsilon, answerLearningRate
     # If not possible, return 'NOT POSSIBLE'
 
