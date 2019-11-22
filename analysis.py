@@ -66,11 +66,9 @@ def question3e():
 
 
 def question8():
-    # CHeck
-    answerEpsilon = 0.0
-    answerLearningRate = 1.0
-    return answerEpsilon, answerLearningRate
-    # If not possible, return 'NOT POSSIBLE'
+    answerEpsilon = None
+    answerLearningRate = None
+    return 'NOT POSSIBLE'
 
 
 if __name__ == '__main__':
