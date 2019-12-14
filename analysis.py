@@ -12,37 +12,32 @@
 # Pieter Abbeel (pabbeel@cs.berkeley.edu).
 
 
-######################
-# ANALYSIS QUESTIONS #
-######################
-
-# Set the given parameters to obtain the specified policies through
-# value iteration.
-
 def question2():
-    answerDiscount = 0.9
+    answerDiscount = 0.90
     answerNoise = 0.0140
+    # answerNoise = 0.0160
     return answerDiscount, answerNoise
 
 
 def question3a():
-    answerDiscount = 0.2
-    answerNoise = 0.0
+    # answerDiscount = 0.20
+    answerDiscount = 0.30
+    answerNoise = 0.0009
     answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
-    # If not possible, return 'NOT POSSIBLE'
 
 
 def question3b():
-    answerDiscount = 0.20
-    answerNoise = 0.2
+    # answerDiscount = 0.30
+    answerDiscount = 0.35
+    answerNoise = 0.15
     answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 
 def question3c():
-    answerDiscount = 0.9
+    answerDiscount = 0.90
     answerNoise = 0.0
     answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
@@ -50,16 +45,18 @@ def question3c():
 
 
 def question3d():
-    answerDiscount = 0.9
-    answerNoise = 0.2
+    answerDiscount = 0.90
+    # answerNoise = 0.0
+    answerNoise = 0.20
     answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 
 def question3e():
-    answerDiscount = 0.9
-    answerNoise = 0.2
+    answerDiscount = 0.90
+    # answerNoise = 0.0
+    answerNoise = 0.20
     answerLivingReward = 1.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'

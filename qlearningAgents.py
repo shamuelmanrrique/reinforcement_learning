@@ -54,7 +54,6 @@ class QLearningAgent(ReinforcementAgent):
           Should return 0.0 if we have never seen a state
           or the Q node value otherwise
         """
-        "*** YOUR CODE HERE ***"
         return self.QValues[state, action]
 
     def computeValueFromQValues(self, state):
@@ -78,14 +77,16 @@ class QLearningAgent(ReinforcementAgent):
           are no legal actions, which is the case at the terminal state,
           you should return None.
         """
-        "*** YOUR CODE HERE ***"
-        # util.raiseNotDefined()
-        legal_actions = self.getLegalActions(state)  # all the legal actions
+        max_qVal = self.computeValueFromQValues(state)
 
-        value = self.getValue(state)
+        legal_actions = self.getLegalActions(state)
+        actions = []
         for action in legal_actions:
-            if (value == self.getQValue(state, action)):
-                return action
+            qVal = self.getQValue(state, action)
+            if qVal == max_qVal:
+                actions.append(action)
+
+        return random.choice(actions)
 
     def getAction(self, state):
         """
@@ -98,11 +99,8 @@ class QLearningAgent(ReinforcementAgent):
           HINT: You might want to use util.flipCoin(prob)
           HINT: To pick randomly from a list, use random.choice(list)
         """
-        # Pick Action
         legalActions = self.getLegalActions(state)
         action = None
-        "*** YOUR CODE HERE ***"
-        # util.raiseNotDefined()
         if (util.flipCoin(self.epsilon)):
             action = random.choice(legalActions)
         else:
@@ -119,8 +117,6 @@ class QLearningAgent(ReinforcementAgent):
           NOTE: You should never call this function,
           it will be called on your behalf
         """
-        "*** YOUR CODE HERE ***"
-        # util.raiseNotDefined()
         newQValue = (1 - self.alpha) * \
             self.getQValue(state, action)  # new Qvalue
         newQValue += self.alpha * \
@@ -188,8 +184,6 @@ class ApproximateQAgent(PacmanQAgent):
           Should return Q(state,action) = w * featureVector
           where * is the dotProduct operator
         """
-        "*** YOUR CODE HERE ***"
-        # util.raiseNotDefined()
         return self.QValues[state, action]
 
     def update(self, state, action, nextState, reward):
