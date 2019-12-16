@@ -28,6 +28,7 @@
 
 import mdp
 import util
+import random
 
 from learningAgents import ValueEstimationAgent
 import collections
@@ -69,23 +70,9 @@ class ValueIterationAgent(ValueEstimationAgent):
             val = self.values.copy()
             for s in mdp.getStates():
                 if not mdp.isTerminal(s):
-                    maxv = float("-inf")
-                    for action in mdp.getPossibleActions(s):
-                        v = 0
-                        print(action)
-                        for transition in mdp.getTransitionStatesAndProbs(s, action):
-                            v = v + transition[1] * (
-                                mdp.getReward(s, action, transition[0]) + discount * self.values[transition[0]])
-                        if v > maxv:
-                            maxv = v
-                    val[s] = maxv
-                else:
-                    for action in mdp.getPossibleActions(s):
-                        v = 0
-                        for transition in mdp.getTransitionStatesAndProbs(s, action):
-                            v = v + transition[1] * (
-                                mdp.getReward(s, action, transition[0]) + discount * self.values[transition[0]])
-                        val[s] = v
+                    bAction = self.computeActionFromValues(s)
+                    val[s] = self.computeQValueFromValues(s, bAction)
+
             self.values = val
 
     def getValue(self, state):
@@ -121,8 +108,9 @@ class ValueIterationAgent(ValueEstimationAgent):
             bestAction = pActions[0]
             bestQ = self.getQValue(state, bestAction)
             for action in pActions:
-                if self.getQValue(state, action) > bestQ:
-                    bestQ = self.getQValue(state, action)
+                value = self.getQValue(state, action)
+                if value > bestQ:
+                    bestQ = value
                     bestAction = action
             return bestAction
         return None
@@ -169,21 +157,15 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
     def runValueIteration(self):
         states = self.mdp.getStates()
         for i in range(self.iterations):
-            val = self.values.copy()
             possibleVals = []
             s = states[i % len(states)]
+            val = self.values.copy()
             if self.mdp.isTerminal(s):
                 self.values[s] = 0
             else:
                 for action in self.mdp.getPossibleActions(s):
-                    v = 0
-                    transitions = self.mdp.getTransitionStatesAndProbs(
-                        s, action)
-                    for t in transitions:
-                        v += t[1] * (self.mdp.getReward(s, action, t[0]) +
-                                     self.discount * self.values[t[0]])
-
-                    possibleVals.append(v)
+                    possibleVals.append(
+                        self.computeQValueFromValues(s, action))
                 self.values[s] = max(possibleVals)
 
 

@@ -1,21 +1,3 @@
-q_values_k_0_action_north: """
-           illegal
-            0.0000
-           illegal
-"""
-
-q_values_k_0_action_east: """
-           illegal
-            0.0000
-           illegal
-"""
-
-q_values_k_0_action_exit: """
-            0.0000
-           illegal
-            0.0000
-"""
-
 q_values_k_0_action_south: """
            illegal
             0.0000
@@ -28,22 +10,22 @@ q_values_k_0_action_west: """
            illegal
 """
 
-q_values_k_1_action_north: """
+q_values_k_0_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_1_action_east: """
+q_values_k_0_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_1_action_exit: """
+q_values_k_0_action_exit: """
             0.0000
            illegal
-            1.0000
+            0.0000
 """
 
 q_values_k_1_action_south: """
@@ -58,19 +40,19 @@ q_values_k_1_action_west: """
            illegal
 """
 
-q_values_k_2_action_north: """
+q_values_k_1_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_2_action_east: """
+q_values_k_1_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_2_action_exit: """
+q_values_k_1_action_exit: """
             0.0000
            illegal
             1.0000
@@ -88,22 +70,22 @@ q_values_k_2_action_west: """
            illegal
 """
 
-q_values_k_3_action_north: """
+q_values_k_2_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_3_action_east: """
+q_values_k_2_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_3_action_exit: """
+q_values_k_2_action_exit: """
             0.0000
            illegal
-            1.9000
+            1.0000
 """
 
 q_values_k_3_action_south: """
@@ -118,22 +100,22 @@ q_values_k_3_action_west: """
            illegal
 """
 
-q_values_k_4_action_north: """
+q_values_k_3_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_4_action_east: """
+q_values_k_3_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_4_action_exit: """
+q_values_k_3_action_exit: """
             0.0000
            illegal
-            2.7100
+            1.9000
 """
 
 q_values_k_4_action_south: """
@@ -148,20 +130,20 @@ q_values_k_4_action_west: """
            illegal
 """
 
-q_values_k_5_action_north: """
+q_values_k_4_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_5_action_east: """
+q_values_k_4_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_5_action_exit: """
-           -1.0000
+q_values_k_4_action_exit: """
+            0.0000
            illegal
             2.7100
 """
@@ -178,22 +160,22 @@ q_values_k_5_action_west: """
            illegal
 """
 
-q_values_k_6_action_north: """
+q_values_k_5_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_6_action_east: """
+q_values_k_5_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_6_action_exit: """
+q_values_k_5_action_exit: """
            -1.0000
            illegal
-            3.4390
+            2.7100
 """
 
 q_values_k_6_action_south: """
@@ -208,19 +190,19 @@ q_values_k_6_action_west: """
            illegal
 """
 
-q_values_k_7_action_north: """
+q_values_k_6_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_7_action_east: """
+q_values_k_6_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_7_action_exit: """
+q_values_k_6_action_exit: """
            -1.0000
            illegal
             3.4390
@@ -238,22 +220,22 @@ q_values_k_7_action_west: """
            illegal
 """
 
-q_values_k_8_action_north: """
+q_values_k_7_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_8_action_east: """
+q_values_k_7_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_8_action_exit: """
+q_values_k_7_action_exit: """
            -1.0000
            illegal
-            4.0951
+            3.4390
 """
 
 q_values_k_8_action_south: """
@@ -268,22 +250,22 @@ q_values_k_8_action_west: """
            illegal
 """
 
-q_values_k_9_action_north: """
+q_values_k_8_action_east: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_9_action_east: """
+q_values_k_8_action_north: """
            illegal
             0.0000
            illegal
 """
 
-q_values_k_9_action_exit: """
+q_values_k_8_action_exit: """
            -1.0000
            illegal
-            4.6856
+            4.0951
 """
 
 q_values_k_9_action_south: """
@@ -298,22 +280,22 @@ q_values_k_9_action_west: """
            illegal
 """
 
-q_values_k_100_action_north: """
+q_values_k_9_action_east: """
            illegal
-           -0.6670
-           illegal
-"""
-
-q_values_k_100_action_east: """
-           illegal
-            0.9499
+            0.0000
            illegal
 """
 
-q_values_k_100_action_exit: """
-           -9.4767
+q_values_k_9_action_north: """
            illegal
-            9.8175
+            0.0000
+           illegal
+"""
+
+q_values_k_9_action_exit: """
+           -1.0000
+           illegal
+            4.6856
 """
 
 q_values_k_100_action_south: """
@@ -326,6 +308,24 @@ q_values_k_100_action_west: """
            illegal
             0.8236
            illegal
+"""
+
+q_values_k_100_action_east: """
+           illegal
+            0.9499
+           illegal
+"""
+
+q_values_k_100_action_north: """
+           illegal
+           -0.6670
+           illegal
+"""
+
+q_values_k_100_action_exit: """
+           -9.4767
+           illegal
+            9.8175
 """
 
 values: """

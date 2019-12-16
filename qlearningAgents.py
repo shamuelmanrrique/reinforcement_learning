@@ -38,7 +38,7 @@ class QLearningAgent(ReinforcementAgent):
         - self.discount (discount rate)
 
       Functions you should use
-        - self.getLegalActions(state)
+        - self.getLegalActionsself.mdp.getPossibleActions(s)(state)
           which returns legal actions for a state
     """
 
