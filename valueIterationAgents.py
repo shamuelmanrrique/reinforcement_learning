@@ -159,7 +159,6 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
         for i in range(self.iterations):
             possibleVals = []
             s = states[i % len(states)]
-            val = self.values.copy()
             if self.mdp.isTerminal(s):
                 self.values[s] = 0
             else:

@@ -53,19 +53,19 @@ def question3d():
 
 
 def question3e():
+    # answerDiscount = 0.0
+    # answerNoise = 0.0
+    # answerLivingReward = 1.0
     # answerDiscount = 0.90
     # answerNoise = 0.20
     # answerLivingReward = 1.0
     answerDiscount = 0.20
-    # answerNoise = 0.30
     answerNoise = 0.99
     answerLivingReward = 1.0
     return answerDiscount, answerNoise, answerLivingReward
 
 
 def question8():
-    answerEpsilon = None
-    answerLearningRate = None
     return 'NOT POSSIBLE'
 
 
