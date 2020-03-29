@@ -53,6 +53,7 @@ class QLearningAgent(ReinforcementAgent):
           Should return 0.0 if we have never seen a state
           or the Q node value otherwise
         """
+        print(self.QValues[state, action])
         return self.QValues[state, action]
 
     def computeValueFromQValues(self, state):

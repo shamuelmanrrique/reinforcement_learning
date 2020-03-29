@@ -35,6 +35,8 @@ rl/*
 # Visual Studio 2017 auto generated files
 Generated\ Files/
 
+test_cases/*.test_output
+test_cases/*/*.test_output
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
@@ -339,3 +341,6 @@ ASALocalRun/
 .mfractor/
 __pycache__
 track/*
+**/*.pyc
+**rl
+**layout

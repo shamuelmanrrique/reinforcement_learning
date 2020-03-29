@@ -44,10 +44,10 @@ def question3c():
 
 
 def question3d():
-    # answerDiscount = 0.40
-    # answerNoise = 0.20
-    answerDiscount = 0.70
-    answerNoise = 0.55
+    answerDiscount = 0.40
+    answerNoise = 0.20
+    # answerDiscount = 0.70
+    # answerNoise = 0.55
     answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
 
